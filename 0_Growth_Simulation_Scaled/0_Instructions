@@ -1,0 +1,13 @@
+The python file contains the software implementation of the simulation strategy.
+The implementation is for scaled quantities. Here, $\sigma_\omega$ is used, and not $\acute{\sigma}_\omega$.
+The software generates:
+- A numpy file with the nodes that represent the profile after growth ($g = g_e$).
+- A plot of the profile at several values of $g$.
+
+Simulation parameters can be set between comments
+
+# --- Input ---
+
+and
+
+# --- End of Input ---
