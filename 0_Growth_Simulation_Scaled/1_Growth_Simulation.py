@@ -4,9 +4,6 @@ import matplotlib.pyplot as plt
 import math
 
 
-#
-
-
 def arc_length(array_nodes):
     # Calculating the arc lengths at each node
     r_array = np.cumsum(np.sqrt(np.sum(np.power(np.roll(array_nodes, 1, axis=0) - array_nodes, 2), axis=1))[1:])
