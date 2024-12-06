@@ -1,4 +1,4 @@
-Python file 1_Gen_Giv_Profs.py contains the software implementation of the simulation strategy.
+Python file 1_Gen_Giv_Profs.py contains the software implementation of the simulation strategy delineated in the article.
 The implementation is for quantities that are not scaled.
 IMPORTANT: $\acute{\sigma}_\omega$ is used instead of $\sigma_\omega$
 The software generates:
