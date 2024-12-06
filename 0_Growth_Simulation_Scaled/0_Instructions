@@ -1,4 +1,4 @@
-The file 1_Growth_Simulations.py contains the software implementation of the simulation strategy in the article.
+The file 1_Growth_Simulations.py contains the software implementation of the simulation strategy delineated in the article.
 The implementation is for scaled quantities. Here, $\sigma_\omega$ is used, and not $\acute{\sigma}_\omega$.
 The software generates:
 - A numpy file with the nodes that represent the profile after growth ($g = g_e$).
