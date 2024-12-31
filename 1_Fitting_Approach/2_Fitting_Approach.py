@@ -329,7 +329,7 @@ def simulation(params, args):
     # Minimum distance between nodes.
     dist_min = dist_max * 0.49
 
-    g = 0  # growth parameter
+    g = 0  # growth parameter $g_\alpha$, not growth $g$
     growth_completed = False
     while not growth_completed:
 
@@ -383,12 +383,12 @@ initial_guess_sigma_o_sigma_a = 2.5  # initial guess \sigma_omega/sigma_\alpha
 edge_len_max = 0.025  # | \bm{\eta}_\text{max} |
 node_num_remesh = 200  # n_r
 
-node_array_before = np.load('given_prof_g_0.npy')  # given profile g = 0
+node_array_before = np.load('given_prof_g_0.npy')  # given profile g_\alpha = 0
 node_array_after = np.load('given_prof_g_e.npy')  # given profile g = g_e
 # --- End of Input ---
 
 # --- fitting ---
-# Remeshing given profile g = 0 to match | \bm{\eta}_\text{max} |
+# Remeshing given profile g_\alpha = 0 to match | \bm{\eta}_\text{max} |
 node_array_before = remeshing(node_array_before, int(arc_length(node_array_before)[0] / edge_len_max))
 # Remeshing given profile g = g_e to minimize the distance with the simulated profile during fitting
 node_array_after = remeshing(node_array_after, node_num_remesh)
