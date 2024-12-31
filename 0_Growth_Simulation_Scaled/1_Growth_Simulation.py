@@ -271,7 +271,7 @@ def simulation(array_nodes, arguments):
 
 
 # --- Input ---
-# The following array represents the profile of $\partial\Omega^*_\alpha (g = 0)$
+# The following array represents the profile of $\partial\Omega^*_\alpha (g_\alpha = 0)$
 # Ensure that the last node lies on the scaled y-axis.
 node_array = np.array([[0, 0], [4, 0], [3, 1], [3, 9], [4, 10], [8, 10], [9, 9], [9, 1], [8, 0],    # O
                        [11, 0], [11, 10], [13, 10], [13, 0],                                        # I
