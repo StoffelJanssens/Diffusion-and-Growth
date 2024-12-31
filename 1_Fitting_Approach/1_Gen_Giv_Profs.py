@@ -310,14 +310,14 @@ def simulation(params, args):
 
 
 # --- Input ---
-n_g_0_given = 1600  # n(g = 0) of the given profile
+n_g_0_given = 1600  # n(g_\alpha = 0) of the given profile
 g_e = 1.0  # g_e
 d_a = 1.0  # d_\alpha
 sigma_o_sigma_a = 2.0  # \sigma_omega/sigma_\alpha
-r_o_g_0 = 5.0  # r_\omega(g = 0)
+r_o_g_0 = 5.0  # r_\omega(g_\alpha = 0)
 # --- End of Input ---
 
-# generate profile before growth (g = 0)
+# generate profile before growth (g_\alpha = 0)
 node_array_before = np.array([[0, 0], [r_o_g_0, 0]], dtype=float)
 node_array_before = remeshing(node_array_before, n_g_0_given)
 np.save('given_prof_g_0.npy', node_array_before)
