@@ -264,7 +264,7 @@ def sim_vs_exp(params, args):
     # Minimum distance between nodes.
     dist_min = dist_max * 0.49
 
-    g = 0  # growth parameter
+    g = 0  # growth parameter $g_\alpha$, not growth $g$.
     growth_completed = False
     while not growth_completed:
         # Preventing negative y or z values.
