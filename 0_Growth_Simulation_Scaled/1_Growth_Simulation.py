@@ -216,7 +216,7 @@ def upper_bound_distance(array_nodes, max_dist):
 def simulation(array_nodes, arguments):
     green_lines_num, array_length_min_incl, cap_c, concent_beta, diff_len_beta, cap_d = arguments
 
-    g = 0  # growth parameter
+    g = 0  # growth parameter $g_\alpha$, not growth $g$.
     plot_index = 1
     print('Progress = ', 0)
     growth_completed = False
