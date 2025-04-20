@@ -1,0 +1,19 @@
+File 1_Gen_Giv_Profs.py contains the software implementation of the simulation strategy delineated in the associated article.
+The implementation is for quantities that are not scaled.
+IMPORTANT: $\acute{\sigma}_\omega$ is used instead of $\sigma_\omega$
+The software generates:
+- A NumPy file with the nodes that represent a flat profile before growth ($g_\alpha = g_e$).
+- A NumPy file with the nodes that represent the profile after growth ($g_\alpha = g_e$).
+
+These NumPy files serve as inputs (given profiles) for 2_Fitting_Approach.py.
+The latter software fits simulated profiles to the given profiles starting from initial guesses.
+A plot of the fitted profile and the given profiles is generated.
+The values of the fitted parameters are displayed on the command-line interface.
+
+In both Python files, parameters can be set between comments.
+
+# --- Input ---
+
+and
+
+# --- End of Input ---
